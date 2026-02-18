@@ -23,7 +23,7 @@ const pizzaMenu = {
   name: "Pizza Royale Spéciale",
   description: "Saus tomat premium san marzano, mozzarella berkualitas tinggi, pepperoni pilihan, paprika, jamur segar, dan taburan herbs provence. Dipanggang dengan sempurna dalam oven tradisional.",
   price: 70000,
-  image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop",
+  image: "c:\Users\Hype AMD\Downloads\WhatsApp Image 2026-02-18 at 13.58.38.jpeg",
 }
 
 const formatPrice = (price: number) => {
@@ -34,7 +34,7 @@ const formatPrice = (price: number) => {
   }).format(price)
 }
 
-const whatsappNumber = "6281249930360"
+const whatsappNumber = "6281380782229"
 
 const handleOrder = () => {
   const message = `Bonjour! 🇫🇷%0A%0ASaya ingin memesan:%0A🍕 ${pizzaMenu.name}%0AHarga: ${formatPrice(pizzaMenu.price)}%0A%0ATerima kasih!`
@@ -213,7 +213,7 @@ export default function Home() {
                 <h1 className={`font-playfair text-xl sm:text-2xl font-bold transition-colors duration-300 ${
                   isScrolled ? 'text-foreground' : 'text-white'
                 }`}>
-                  La Pizzeria
+                  Bell Bakery
                 </h1>
                 <p className={`text-xs font-cormorant tracking-[0.2em] uppercase transition-colors duration-300 ${
                   isScrolled ? 'text-muted-foreground' : 'text-white/80'
@@ -300,7 +300,7 @@ export default function Home() {
           >
             <span className="text-2xl">🇫🇷</span>
             <span className="text-white/90 font-cormorant text-lg tracking-wide">
-              Authentic French Culinary Art
+              Authentic Bakery Culinary Art
             </span>
           </motion.div>
 
@@ -311,7 +311,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            La Pizzeria
+           Bella Bakery
             <motion.span 
               className="block text-gold-gradient mt-2"
               initial={{ opacity: 0, scale: 0.9 }}
@@ -341,7 +341,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-            "L'art de la pizza française"
+            "L'art de la Bakery française"
           </motion.p>
           
           <motion.p 
@@ -453,7 +453,7 @@ export default function Home() {
               <div className="w-20 h-[1px] bg-gradient-to-l from-transparent to-amber-500" />
             </div>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Setiap pizza dibuat dengan penuh dedikasi menggunakan bahan-bahan pilihan berkualitas tinggi
+              Setiap Hidangan dibuat dengan penuh dedikasi menggunakan bahan-bahan pilihan berkualitas tinggi
             </p>
           </AnimatedSection>
 
@@ -581,14 +581,14 @@ export default function Home() {
           
           <AnimatedSection>
             <p className="text-white/90 text-lg mb-6 leading-relaxed max-w-2xl mx-auto">
-              La Pizzeria Royale lahir dari passion kami terhadap seni kuliner Perancis dan Italia. 
-              Berawal dari dapur kecil di tahun 2014, kini kami telah melayani ribuan pelanggan setia.
+              Bella Bakery Royale lahir dari passion kami terhadap seni kuliner Perancis dan Italia. 
+              Berawal dari dapur kecil di tahun 2025, kini kami telah melayani banyak pelanggan setia.
             </p>
           </AnimatedSection>
           
           <AnimatedSection>
             <p className="text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto">
-              Setiap pizza dibuat dengan tangan oleh chef berpengalaman kami, menggunakan resep rahasia 
+              Setiap hidangan dibuat dengan tangan oleh chef berpengalaman kami, menggunakan resep rahasia 
               yang telah diwariskan turun-temurun dengan bahan-bahan premium pilihan.
             </p>
           </AnimatedSection>
@@ -629,8 +629,8 @@ export default function Home() {
             viewport={{ once: true, margin: "-50px" }}
           >
             {[
-              { icon: MapPin, title: "Lokasi", content: "Jl. Sudirman No. 123\nJakarta Pusat" },
-              { icon: Phone, title: "Telepon", content: "+62 812-4993-0360\n10:00 - 22:00" },
+              { icon: MapPin, title: "Lokasi", content: "BHPE G1 \Kotawaringin Timur" },
+              { icon: Phone, title: "Telepon", content: "+62 813-8078-2229\n10:00 - 22:00" },
               { icon: MessageCircle, title: "WhatsApp", content: "", isAction: true }
             ].map((item, index) => (
               <motion.div key={index} variants={fadeInUp}>
@@ -711,9 +711,9 @@ export default function Home() {
                 <Pizza className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="font-playfair text-xl font-bold">La Pizzeria Royale</h3>
+                <h3 className="font-playfair text-xl font-bold">Bella Bakery Royale</h3>
                 <p className="text-xs font-cormorant tracking-[0.2em] uppercase text-white/60">
-                  Authentic French Pizza
+                  Authentic French Bakery
                 </p>
               </div>
             </div>
@@ -722,7 +722,7 @@ export default function Home() {
             <div className="flex items-center gap-6 text-white/70 text-sm">
               <span className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-amber-400" />
-                +62 812-4993-0360
+                +62 813-8078-2229
               </span>
               <span className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-amber-400" />
@@ -734,7 +734,7 @@ export default function Home() {
           {/* Divider */}
           <div className="border-t border-white/10 mt-6 pt-6 text-center">
             <p className="text-white/50 text-sm">
-              © 2024 La Pizzeria Royale. All rights reserved. | &ldquo;L&apos;art de la pizza française&rdquo;
+              © 2024 Bella Bakery Royale. All rights reserved. | &ldquo;L&apos;art de la Bakery française&rdquo;
             </p>
           </div>
         </div>
